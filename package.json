@@ -1,7 +1,7 @@
 {
   "name": "claude-usage-tray",
   "productName": "Claude Usage Tray",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "macOS menu bar bar for Claude plan usage",
   "main": "main.js",
   "private": true,
@@ -12,12 +12,28 @@
   "build": {
     "appId": "uk.co.ohdigital.claude-usage-tray",
     "productName": "Claude Usage Tray",
-    "files": ["main.js", "usage.js", "icon.js", "alerts.js", "preload.js", "panel/**"],
+    "files": [
+      "main.js",
+      "usage.js",
+      "icon.js",
+      "alerts.js",
+      "preload.js",
+      "panel/**"
+    ],
     "mac": {
-      "target": [{ "target": "dmg", "arch": ["arm64"] }],
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
       "category": "public.app-category.utilities",
       "identity": null,
-      "extendInfo": { "LSUIElement": true }
+      "extendInfo": {
+        "LSUIElement": true
+      }
     }
   },
   "devDependencies": {
